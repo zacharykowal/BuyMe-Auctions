@@ -16,5 +16,19 @@ This project was created using Java, JSP, and MySQL to simulate the operations o
 - Searches for items and auctions
 - Asks questions on the site Q&A board
 
-Login to the website using one of the usernames and passwords (provided in the MySQL database) to see all of the above in action.
+# Running the Project
+
+This project was created using Eclipse IDE. To run it:
+
+1. Import the project into the Eclipse workspace on your local machine
+2. In Eclipse, create a new Tomcat v8.5 server (Window -> Show View -> Servers, click "create new server" in the servers view, go through with the setup and then right click on the server to start it)
+3. Import the provided schema file into MySQL and start the MySQL server
+4. Configure the build path. In the project explorer, navigate to Java Resources -> Libraries -> JRE System Library. Right click on JRE System Library, then Build Path -> Configure Build Path. Select the Server Runtime Tomcat library and apply.
+5. The environment is now set up. Navigate to src -> main -> webapp. Right click on login.jsp -> Run As -> Run on Server. Select the Tomcat server from earlier and the home page should open.
+
+Login to the website using one of the usernames and passwords (provided in the MySQL database) to see everything in action!
+
+
+
+
 
