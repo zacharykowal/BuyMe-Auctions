@@ -2,19 +2,19 @@
 
 This project was created using Java, JSP, and MySQL to simulate the operations of an auction website similar to eBay. There are three different types of users: admins, customer reps, and regular end users. Each type of user can interact with the website in a number of ways.
 
-## Admin
-- Creates new customer rep accounts
-- Generates sales reports using various criteria
+## Admins
+- Create new customer rep accounts
+- Generate sales reports using various criteria
 
 ## Customer Reps
-- Edits user account information
-- Deletes bids and auctions
-- Replies to questions on the site Q&A board
+- Edit user account information
+- Delete bids and auctions
+- Reply to questions on the site Q&A board
 
 ## End Users
-- Creates & bids on auctions
-- Searches for items and auctions
-- Asks questions on the site Q&A board
+- Create & bid on auctions
+- Search for items and auctions
+- Ask questions on the site Q&A board
 
 # Running the Project
 
