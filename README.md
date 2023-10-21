@@ -18,5 +18,3 @@ This project was created using Java, JSP, and MySQL to simulate the operations o
 
 Login to the website using one of the usernames and passwords (provided in the MySQL database) to see all of the above in action.
 
-# Running the Project
-
