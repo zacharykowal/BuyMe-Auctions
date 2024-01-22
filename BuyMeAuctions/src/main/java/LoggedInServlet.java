@@ -131,7 +131,7 @@ public class LoggedInServlet extends HttpServlet {
 								ps6.executeUpdate();
 							}else {
 								//higher bid placed but not yet at the upper limit
-								//
+								
 								PreparedStatement ps5 = con.prepareStatement("insert into alert(text) values(\"higher bid placed on auction you are bidding on\")");
 								ps5.executeUpdate();
 								PreparedStatement ps6 = con.prepareStatement("insert into sentto(alert_id, username) values(last_insert_id(), ?)");
