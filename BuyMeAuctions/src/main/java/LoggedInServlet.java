@@ -131,7 +131,7 @@ public class LoggedInServlet extends HttpServlet {
 								ps6.executeUpdate();
 							}else {
 								//higher bid placed but not yet at the upper limit
-								//here would be where we implement the automatic bid 
+								
 								PreparedStatement ps5 = con.prepareStatement("insert into alert(text) values(\"higher bid placed on auction you are bidding on\")");
 								ps5.executeUpdate();
 								PreparedStatement ps6 = con.prepareStatement("insert into sentto(alert_id, username) values(last_insert_id(), ?)");
@@ -148,7 +148,7 @@ public class LoggedInServlet extends HttpServlet {
 					ps.setFloat(2, maxBid);
 					ps.executeUpdate();
 					
-					//if there is more than one tuple in the bid table with the same amount and upper_limit this will cause problems
+					
 					PreparedStatement ps1 = con.prepareStatement("select bid_id from bid where amount=? and upper_limit=?");
 					ps1.setFloat(1, initialBid);
 					ps1.setFloat(2, maxBid);
@@ -193,7 +193,7 @@ public class LoggedInServlet extends HttpServlet {
 					ps.setFloat(5, initial);
 					ps.executeUpdate();
 					
-					//will cause problems if two auctions share the same end date and min price
+					
 					PreparedStatement ps1 = con.prepareStatement("select auction_id from auction where end_date=? and min_price=?");
 					ps1.setString(1, date);
 					ps1.setFloat(2, minPrice);
