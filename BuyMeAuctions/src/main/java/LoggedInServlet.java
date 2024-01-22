@@ -193,7 +193,7 @@ public class LoggedInServlet extends HttpServlet {
 					ps.setFloat(5, initial);
 					ps.executeUpdate();
 					
-					
+					//
 					PreparedStatement ps1 = con.prepareStatement("select auction_id from auction where end_date=? and min_price=?");
 					ps1.setString(1, date);
 					ps1.setFloat(2, minPrice);
