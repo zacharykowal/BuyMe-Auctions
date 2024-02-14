@@ -1,6 +1,6 @@
 # BuyMe Auctions
 
-This project was created using Java, JSP, and MySQL to simulate the operations of an auction website similar to eBay. There are three different types of users: admins, customer reps, and regular end users. Each type of user can interact with the website in a number of ways.
+This project was created using Java, JSP, HTML, and MySQL to simulate the operations of an auction website similar to eBay. There are three different types of users: admins, customer reps, and regular end users. Each type of user can interact with the website in a number of ways.
 
 ## Admins
 - Create new customer rep accounts
